@@ -1,4 +1,4 @@
-﻿const translations = {
+const translations = {
   en: {
     nav_download: "Download",
     nav_notes: "Release Notes",
