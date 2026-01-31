@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rogue Chibiki | Release Notes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-glow"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/">
+          <img src="assets/ChibiLogo.png" alt="logo" data-i18n-alt="logo_alt" />
+          <span>Rogue Chibiki</span>
+        </a>
+        <nav class="nav">
+          <a href="/download" data-i18n="nav_download">Download</a>
+          <a href="/release" data-i18n="nav_notes">Release Notes</a>
+          <a href="/faq" data-i18n="nav_faq">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-toggle" role="group">
+            <button type="button" data-lang="en" class="is-active">EN-US</button>
+            <button type="button" data-lang="uk">UKR</button>
+            <button type="button" data-lang="ru">RUS</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="release" class="release reveal is-visible">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="release_title">Release Notes</h2>
+            <p data-i18n="release_subtitle">What changed in each update.</p>
+          </div>
+          <div id="release-notes" class="release-grid"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
