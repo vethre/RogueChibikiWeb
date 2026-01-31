@@ -295,12 +295,16 @@ const languageMap = {
 const i18nNodes = document.querySelectorAll("[data-i18n]");
 const altNodes = document.querySelectorAll("[data-i18n-alt]");
 const languageButtons = document.querySelectorAll("[data-lang]");
+// CHANGED: We use these safely now
 const releaseContainer = document.querySelector("#release-notes");
 const musicButton = document.querySelector("#music-toggle");
 const musicAudio = document.querySelector("#bg-music");
 const volumeSlider = document.querySelector("#music-volume");
 
 function renderReleaseNotes(lang) {
+  // CHANGED: Guard clause - stop if there is no release container on this page
+  if (!releaseContainer) return;
+
   const notes = releaseNotes[lang] || releaseNotes.en;
   releaseContainer.innerHTML = "";
 
@@ -334,8 +338,11 @@ function updateMusicLabel(lang) {
   if (!musicButton || !musicAudio) {
     return;
   }
-  const isPaused = musicAudio.paused;
-  musicButton.textContent = isPaused ? translations[lang].music_play : translations[lang].music_pause;
+  // Check if translations exist for this key to prevent errors
+  if (translations[lang] && translations[lang].music_play) {
+      const isPaused = musicAudio.paused;
+      musicButton.textContent = isPaused ? translations[lang].music_play : translations[lang].music_pause;
+  }
 }
 
 function setLanguage(lang) {
@@ -367,6 +374,8 @@ function setLanguage(lang) {
 
 function initMusic() {
   if (!musicAudio || !musicButton || !volumeSlider) return;
+  
+  // Set initial volume if saved or default
   musicAudio.volume = Number(volumeSlider.value);
 
   volumeSlider.addEventListener("input", (event) => {
@@ -396,10 +405,12 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
+// Init
 const savedLang = localStorage.getItem("rc-lang") || "en";
 setLanguage(savedLang);
 initMusic();
 
+// Intersection Observer for animations
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -414,4 +425,3 @@ const observer = new IntersectionObserver(
 
 const revealNodes = document.querySelectorAll(".reveal");
 revealNodes.forEach((node) => observer.observe(node));
-
