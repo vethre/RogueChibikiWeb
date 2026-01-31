@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rogue Chibiki | Cozy Deckbuilding Roguelike</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-glow"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top">
+          <img src="assets/ChibiLogo.png" alt="Rogue Chibiki logo" data-i18n-alt="logo_alt" />
+          <span>Rogue Chibiki</span>
+        </a>
+        <nav class="nav">
+          <a href="#download" data-i18n="nav_download">Download</a>
+          <a href="#release" data-i18n="nav_notes">Release Notes</a>
+          <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-toggle" role="group" aria-label="Language toggle">
+            <button type="button" data-lang="en" class="is-active">EN-US</button>
+            <button type="button" data-lang="uk">UKR</button>
+            <button type="button" data-lang="ru">RUS</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="hero_tagline">Download, update, and read the full release notes here.</p>
+            <h1 data-i18n="hero_title">Rogue Chibiki</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
+              A cozy 2D roguelike deckbuilder in chibi style.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#download" data-i18n="hero_cta_primary">Download APK</a>
+              <a class="btn ghost" href="#release" data-i18n="hero_cta_secondary">Read Release Notes</a>
+            </div>
+            <div class="hero-badges">
+              <span class="badge" data-i18n="hero_badge_1">No Telegram required</span>
+              <span class="badge" data-i18n="hero_badge_2">Quick setup</span>
+              <span class="badge" data-i18n="hero_badge_3">Offline friendly</span>
+            </div>
+            <div class="music-panel">
+              <div>
+                <span class="music-label" data-i18n="music_label">Background music</span>
+                <p class="music-note" data-i18n="music_note">Cozy jazz from the game soundtrack.</p>
+              </div>
+              <div class="music-controls">
+                <button class="btn tiny" id="music-toggle" type="button" data-i18n="music_play">Play</button>
+                <label class="volume">
+                  <span data-i18n="music_volume">Volume</span>
+                  <input id="music-volume" type="range" min="0" max="1" step="0.05" value="0.35" />
+                </label>
+              </div>
+              <audio id="bg-music" src="assets/background-jazz.mp3" preload="none" loop></audio>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="hero-banner">
+              <img src="assets/RogueChibikiBanner.png" alt="Rogue Chibiki banner" data-i18n-alt="banner_alt" />
+            </div>
+            <div class="floating-card">
+              <p class="card-title" data-i18n="hero_card_title">Newest build</p>
+              <p class="card-value">v1.3.0</p>
+              <p class="card-meta" data-i18n="hero_card_meta">January 26, 2026</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip reveal">
+        <div class="container feature-grid">
+          <div class="feature-card">
+            <h3 data-i18n="feature_one_title">Deckbuilding that feels cozy</h3>
+            <p data-i18n="feature_one_body">Build sweet combos, meet playful enemies, and keep every run light and fun.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="feature_two_title">Short runs, big charm</h3>
+            <p data-i18n="feature_two_body">Perfect for mobile play. Each run is 10-20 minutes of chibi chaos.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="feature_three_title">Updates in one place</h3>
+            <p data-i18n="feature_three_body">Download, patch, and read notes without jumping between apps.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download reveal">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="download_title">Download</h2>
+            <p data-i18n="download_subtitle">Pick your platform and start in minutes.</p>
+          </div>
+          <div class="download-grid">
+            <div class="download-card">
+              <h3 data-i18n="download_primary_title">Latest Build</h3>
+              <p class="download-version">v1.3.0</p>
+              <div class="download-buttons">
+                <a class="btn primary" href="#" data-i18n="download_android">Android APK</a>
+                <a class="btn ghost" href="#" data-i18n="download_testflight">iOS TestFlight (invite)</a>
+                <button class="btn ghost" type="button" disabled data-i18n="download_play">Google Play (coming soon)</button>
+              </div>
+              <div class="checksum">
+                <span data-i18n="download_checksum_label">SHA-256</span>
+                <span class="checksum-value">E1F4-74C8-99A1-7B3F-5D11</span>
+              </div>
+            </div>
+            <div class="setup-card">
+              <h3 data-i18n="setup_title">Quick setup</h3>
+              <ol class="setup-steps">
+                <li>
+                  <strong data-i18n="setup_step1_title">Download</strong>
+                  <span data-i18n="setup_step1_body">Grab the latest build from the button above.</span>
+                </li>
+                <li>
+                  <strong data-i18n="setup_step2_title">Install</strong>
+                  <span data-i18n="setup_step2_body">Allow installs from your browser if prompted.</span>
+                </li>
+                <li>
+                  <strong data-i18n="setup_step3_title">Launch</strong>
+                  <span data-i18n="setup_step3_body">Open the game and follow the cozy intro.</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <p class="download-note" data-i18n="download_note">Replace the download links with your latest build files.</p>
+        </div>
+      </section>
+
+      <section id="release" class="release reveal">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="release_title">Release Notes</h2>
+            <p data-i18n="release_subtitle">What changed in each update.</p>
+          </div>
+          <div id="release-notes" class="release-grid"></div>
+        </div>
+      </section>
+
+      <section class="characters reveal">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="characters_title">Meet the Chibis</h2>
+            <p data-i18n="characters_subtitle">A tiny cast with big personality.</p>
+          </div>
+          <div class="character-grid">
+            <article class="character-card">
+              <img src="assets/dangerlyoha.PNG" alt="Danger Lyoha portrait" data-i18n-alt="character_one_alt" />
+              <h3 data-i18n="character_one_name">Danger Lyoha</h3>
+              <p data-i18n="character_one_desc">Risk-loving striker with explosive deck tricks.</p>
+            </article>
+            <article class="character-card">
+              <img src="assets/morphilina.PNG" alt="Morphilina portrait" data-i18n-alt="character_two_alt" />
+              <h3 data-i18n="character_two_name">Morphilina</h3>
+              <p data-i18n="character_two_desc">Shifts between forms to bend the rules.</p>
+            </article>
+            <article class="character-card">
+              <img src="assets/chriswave_gothic_skin.png" alt="Chriswave Gothic skin portrait" data-i18n-alt="character_three_alt" />
+              <h3 data-i18n="character_three_name">Chriswave</h3>
+              <p data-i18n="character_three_desc">Gothic skin with soothing shields and stylish curses.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq reveal">
+        <div class="container">
+          <div class="section-heading">
+            <h2 data-i18n="faq_title">FAQ</h2>
+          </div>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h3 data-i18n="faq_q1">Where are the saves stored?</h3>
+              <p data-i18n="faq_a1">Local on your device. Cloud sync is planned.</p>
+            </div>
+            <div class="faq-item">
+              <h3 data-i18n="faq_q2">Do I need an internet connection?</h3>
+              <p data-i18n="faq_a2">Only for downloading and updates. The game runs offline.</p>
+            </div>
+            <div class="faq-item">
+              <h3 data-i18n="faq_q3">How do I report bugs?</h3>
+              <p data-i18n="faq_a3">Use the feedback link in the game menu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer_text">Made for friends. Built with cozy pixels.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
