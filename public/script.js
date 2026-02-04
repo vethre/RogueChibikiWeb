@@ -277,7 +277,7 @@ const translations = {
 const releaseNotes = {
   en: [
     {
-      version: "0.9.9.3",
+      version: "1.0-FULL",
       date: "February 4, 2026",
       highlights: [
         "The Balance Update",
@@ -302,7 +302,7 @@ const releaseNotes = {
   ],
   uk: [
     {
-      version: "0.9.9.3",
+      version: "1.0-FULL",
       date: "4 лютого 2026",
       highlights: [
         "Оновлення балансу",
@@ -327,7 +327,7 @@ const releaseNotes = {
   ],
   ru: [
     {
-      version: "0.9.9.3",
+      version: "1.0-FULL",
       date: "4 февраля 2026",
       highlights: [
         "Обновление баланса",
