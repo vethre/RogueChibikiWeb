@@ -14,7 +14,7 @@ const translations = {
     hero_badge_2: "Quick setup",
     hero_badge_3: "Offline friendly",
     hero_card_title: "Newest build",
-    hero_card_meta: "February 4, 2026",
+    hero_card_meta: "February 6, 2026",
     music_label: "Background music",
     music_note: "Cozy jazz from the game soundtrack.",
     music_play: "Play",
@@ -105,7 +105,7 @@ const translations = {
     hero_badge_2: "Швидке встановлення",
     hero_badge_3: "Працює офлайн",
     hero_card_title: "Найновіша збірка",
-    hero_card_meta: "4 лютого 2026",
+    hero_card_meta: "6 лютого 2026",
     music_label: "Фонова музика",
     music_note: "Затишний джаз з саундтреку гри.",
     music_play: "Грати",
@@ -196,7 +196,7 @@ const translations = {
     hero_badge_2: "Быстрая установка",
     hero_badge_3: "Работает офлайн",
     hero_card_title: "Свежая сборка",
-    hero_card_meta: "4 февраля 2026",
+    hero_card_meta: "6 февраля 2026",
     music_label: "Фоновая музыка",
     music_note: "Уютный джаз из саундтрека игры.",
     music_play: "Играть",
@@ -277,76 +277,37 @@ const translations = {
 const releaseNotes = {
   en: [
     {
-      version: "1.0-FULL",
-      date: "February 4, 2026",
+      version: "1.0.1-FULL",
+      date: "February 6, 2026",
       highlights: [
-        "The Balance Update",
-        "New Characters: ByOwl (Aggro, HP 42 / Energy 2, Rage Fueled passive, new card Fury)",
-        "New Characters: Morphi Yuke (Tank, HP 55 / Energy 3, Thorns passive, new card Spike Armor)",
-        "New Characters: KoryaMC (Hybrid, HP 50 / Energy 3, Balance Master passive, new card Balance Strike)",
-        "Character Rework: Gaechka - Quick Learner (upgraded cards cost 1 less energy), HP 44 -> 48, unlock 25,000 -> 18,000 XP",
-        "Balance Changes: Iron Wall 1->2, Fortify 1->2, Golden Opportunity 1->2",
-        "Upgrade System Buff: Upgraded cards keep cost, gain stronger stats",
-        "Mechanic Change: Block persists between turns but decays by 50% each turn (minimum 1); enemy block still resets",
-        "New Enemies: Gwinglade and Shadowkekw",
-        "Random Events active: 15% chance after first combat each stage (Mysterious Stranger, Abandoned Chest, Training Dummy, Shady Merchant, Ancient Shrine, Wandering Soul)",
-        "Seed Sharing: each run has an 8-character seed; same seed = same run",
-        "Push Notifications: reminders after 1/3/7 days, auto UA/EN language, can be disabled",
-        "Save Data Backup: export/import save data, merges higher values; Settings -> Data",
-        "New Sounds & Music: Shop Jazz, Boss Battle Theme, new SFX, 1.5s crossfade transitions",
-        "Visual Effects Overhaul: particles, gradient background, holographic upgraded cards, improved glows, screen flashes, haptics, boss effect under HP, smooth scene transitions",
-        "New Cards: Fury, Spike Armor, Balance Strike",
-        "Coming Soon: new bosses, card pool expansion, endless mode improvements, leaderboards, notification settings toggle"
+        "The QoL Update",
+        "New Haptic Feedback, Colors' Juice, Boss Atmosphere",
+        "Card Rework: Flurry - now first-ever Legendary card, x1.5 Mult (Plus ver. - x2) damage for each attack card in hand",
+        "And more..."
       ]
     }
   ],
   uk: [
     {
-      version: "1.0-FULL",
-      date: "4 лютого 2026",
+      version: "1.0.1-FULL",
+      date: "6 лютого 2026",
       highlights: [
-        "Оновлення балансу",
-        "Нові персонажі: БайОул (Агресія, HP 42 / Енергія 2, пасивка Напалм Люті, нова карта Шаленство)",
-        "Нові персонажі: Морфіліна (Юке) (Танк, HP 55 / Енергія 3, пасивка Шипи, нова карта Шипаста броня)",
-        "Нові персонажі: КоряMC (Гібрид, HP 50 / Енергія 3, пасивка Майстер Балансу, нова карта Забалансований удар)",
-        "Переробка персонажів: Ґаєчка - Швидкий Навчальник (покращені карти коштують на 1 менше енергії), HP 44 -> 48, розблоковується 25 000 -> 18 000 XP",
-        "Зміни балансу: Стальне Пузо 1->2, Укріплення 1->2, Золота Можливість 1->2",
-        "Посилення системи покращення: Покращені карти зберігають вартість, отримують сильніші характеристики",
-        "Зміна механіки: Блок зберігається між ходами, але зменшується на 50% кожен хід (мінімум 1); блок ворога все одно скидається",
-        "Нові вороги: Ґвінґлейд та Шадоукекв",
-        "Випадкові події активні: 15% шанс після першого бою на кожному етапі (Таємничий незнайомець, Покинута скриня, Навчальний манекен, Тіньовий торговець, Стародавнє святилище, Мандрівна душа)",
-        "Обмін Сідом: кожен забіг має 8-символьний Сід; той самий Сід = той самий забіг",
-        "Push-сповіщення: нагадування через 1/3/7 днів, автоматична мова UA/EN, можна вимкнути",
-        "Резервне копіювання даних: експорт/імпорт збережених даних, об'єднання вищих значень; Налаштування -> Дані",
-        "Нові звуки та музика: Шоп-джаз, Тема битви з босом, нові звукові ефекти, 1,5-секундні переходи",
-        "Оновлення візуальних ефектів: частинки, градієнтний фон, голографічні покращені карти, покращене світіння, спалахи екрана, тактильні відчуття, ефект боса під HP, плавні переходи сцен",
-        "Нові карти: Лють, Шипаста броня, Збалансований удар",
-        "Скоро: нові боси, розширення пулу карт, покращення нескінченного режиму, перемикач сповіщень у налаштуваннях"
+        "Оновлення якості життя (QoL)",
+        "Нова тактильна віддача, соковиті кольори, атмосфера боса",
+        "Переробка карти: Шквал - перша в історії Легендарна карта, x1.5 (Плюс версія - x2) множник шкоди за кожну карту атаки в руці",
+        "І ще багато..."
       ]
     }
   ],
   ru: [
     {
-      version: "1.0-FULL",
-      date: "4 февраля 2026",
+      version: "1.0.1-FULL",
+      date: "6 февраля 2026",
       highlights: [
-        "Обновление баланса",
-        "Новые персонажи: БайОул (Агрессивный, HP 42 / Энергия 2, пассивный навык Напалм ярости, новая карта Бещенство)",
-        "Новые персонажи: Морфилина (Юки) (Танк, HP 55 / Энергия 3, пассивный навык Шипы, новая карта Шипастая броня)",
-        "Новые персонажи: КоряMC (Гибрид, HP 50 / Энергия 3, пассивный навык Мастер баланса, новая карта Сбалансированный удар)",
-        "Переработка персонажей: Гаечка - Быстрый ученик (улучшенные карты стоят на 1 энергию меньше), HP 44 -> 48, разблокировка 25000 -> 18000 XP",
-        "Изменения баланса: Стальное Пузо 1->2, Укрепление 1->2, Золотая возможность 1->2",
-        "Усиление системы улучшений: улучшенные карты сохраняют стоимость, получают более сильные характеристики",
-        "Изменение механики: Блок сохраняется между ходами, но уменьшается на 50% каждый ход (минимум 1); блокировка врагов по-прежнему сбрасывается",
-        "Новые враги: Гвинглейд и Шэдоукек",
-        "Активны случайные события: 15% шанс после первого боя на каждом этапе (Таинственный незнакомец, Заброшенный сундук, Тренировочный манекен, Теневой торговец, Древнее святилище, Блуждающая душа)",
-        "Обмен сидами: каждый забег имеет сид из 8 символов; одинаковый сид = один и тот же забег",
-        "Push-уведомления: напоминания через 1/3/7 дней, автоматический выбор языка UA/EN, можно отключить",
-        "Резервное копирование сохранений: экспорт/импорт сохранений, объединение больших значений; Настройки -> Данные",
-        "Новые звуки и музыка: джаз магазина, тема битвы с боссом, новые звуковые эффекты, переходы с плавным переходом 1,5 секунды",
-        "Переработка визуальных эффектов: частицы, градиентный фон, голографические улучшенные карты, улучшенное свечение, вспышки экрана, тактильная отдача, эффект босса под HP, плавная сцена переходы",
-        "Новые карты: Ярость, Шиповая броня, Удар равновесия",
-        "Скоро: новые боссы, расширение набора карт, улучшения бесконечного режима, таблицы лидеров, переключение настроек уведомлений"
+        "Обновление качества жизни (QoL)",
+        "Новая тактильная отдача, сочные цвета, атмосфера босса",
+        "Переработка карты: Шквал - первая в истории Легендарная карта, x1.5 (Плюс версия - x2) множитель урона за каждую карту атаки в руке",
+        "И многое другое..."
       ]
     }
   ]
